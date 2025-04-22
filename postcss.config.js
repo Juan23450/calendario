@@ -1,7 +1,7 @@
-// postcss.config.js  – CommonJS
+// postcss.config.js  (CommonJS)
 module.exports = {
   plugins: {
-    "@tailwindcss/postcss": {},
-    autoprefixer: {},          // harmless even if Tailwind adds it internally
+    "@tailwindcss/postcss": {},   // correct plugin for v4 :contentReference[oaicite:3]{index=3}
+    autoprefixer: {},
   },
 };
