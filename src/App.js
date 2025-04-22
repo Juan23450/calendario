@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import WeeklyCalendar from './components/WeeklyCalendar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App" style={{ 
+      backgroundColor: '#282c34', 
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      padding: '20px'
+    }}>
+      <header style={{ 
+        color: 'white',
+        marginBottom: '30px'
+      }}>
+        <h1>Weekly Calendar with Random Rewards</h1>
       </header>
+      <main style={{ width: '100%', maxWidth: '1000px' }}>
+        <WeeklyCalendar />
+      </main>
     </div>
   );
 }
