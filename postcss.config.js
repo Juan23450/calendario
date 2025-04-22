@@ -1,7 +1,7 @@
-// postcss.config.js  (CommonJS)
+// postcss.config.js  (CommonJS for CRA/Webpack)
 module.exports = {
   plugins: {
-    "@tailwindcss/postcss": {},   // correct plugin for v4 :contentReference[oaicite:3]{index=3}
+    tailwindcss: {},     // v3 plugin lives in the main package
     autoprefixer: {},
   },
 };
