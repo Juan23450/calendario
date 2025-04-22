@@ -2,41 +2,39 @@
   "name": "weekly-calendar",
   "version": "0.1.0",
   "private": true,
+
   "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    /*  React + CRA  */
+    "react": "^18.2.0",                      // last version CRA 5 supports :contentReference[oaicite:0]{index=0}
+    "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "tailwindcss": "^3.4.4",
+
+    /*  Tailwind v3 trio (must live in **dependencies**)  */
+    "tailwindcss": "3.4.4",                  // latest v3 point‑release :contentReference[oaicite:1]{index=1}
+    "postcss": "^8.4.38",                    // any 8.x works with v3 :contentReference[oaicite:2]{index=2}
+    "autoprefixer": "^10.4.16",              // required by Tailwind docs :contentReference[oaicite:3]{index=3}
+
+    /*  Testing utilities (optional)  */
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/dom": "^10.4.0",
     "web-vitals": "^2.1.4"
   },
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": ["react-app", "react-app/jest"]
   },
+
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   }
 }
